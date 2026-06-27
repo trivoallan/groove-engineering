@@ -44,6 +44,20 @@ Puis, toujours : « **Qui d'autre** devrais-je écouter là-dessus ? Tu peux me 
 
 ---
 
+## Demander une intro à un connecteur (ex. Eric)
+**Le secret : fais le boulot à sa place.** Écris-lui le message qu'il n'a plus qu'à **transférer**. Zéro effort = il le fait. Et demande du **précis** (« un superviseur musical », pas « des gens dans la musique »).
+
+**Message au connecteur :**
+> [Prénom], j'ai 3-4 fusions de genres que j'ai bricolées — je veux ton avis de **pro**, pas de gentillesse : ce qui tient, ce qui est nul.
+> Et si y'en a une qui te parle : tu connais un **superviseur musical** (pub/film) ou quelqu'un en **bibliothèque / label** à qui je pourrais poser 2-3 questions ? Je vends rien, je veux juste comprendre comment ils bossent. Je te prépare le texte à transférer, t'as **rien à faire**.
+
+**Texte prêt à transférer (tu le donnes au connecteur) :**
+> Salut [Prénom], je te présente Tristan — il explore un outil autour de la musique générée **avec droits clairs**. Il ne cherche **pas** à te vendre quoi que ce soit : il veut 20 min de ton regard sur comment tu trouves et clearz ta musique aujourd'hui. Quelqu'un de sérieux, ça vaut le coup. Je vous mets en lien.
+
+> Le but de l'intro = le **test de demande** (5 questions ci-dessus), pas un pitch.
+
+---
+
 ## La règle d'or
 Le but de chaque échange n'est PAS qu'il aime ton idée. C'est de repartir avec : **(1)** un fait sur son budget/comportement, **(2)** la vraie douleur, **(3)** une intro vers 2 autres.
 **Si tu as pitché, tu as raté.**
