@@ -38,8 +38,10 @@ def exemplars(f):
 def compile_suno(f):
     """Representation -> prompt de style Suno (anglais, tags separes par virgules)."""
     refs = list(f["references"]) + [e["track"] for e in exemplars(f)]
-    parts = [
-        f"{f['genre_a']} x {f['genre_b']} fusion",
+    parts = [f"{f['genre_a']} x {f['genre_b']} fusion"]
+    if f.get("constraints"):
+        parts.append("; ".join(c["claim"] for c in f["constraints"]))
+    parts += [
         f["groove_from"]["desc"],
         f["harmony_from"]["desc"],
         ", ".join(f["instrumentation"]),
@@ -54,23 +56,29 @@ def compile_suno(f):
 
 def compile_brief(f):
     """Meme representation -> brief humain (autre backend, prouve le decouplage)."""
-    brief = (
-        f"Fusion {f['genre_a']} x {f['genre_b']}. "
-        f"Groove de {f['groove_from']['genre']} : {f['groove_from']['desc']}. "
-        f"Harmonie de {f['harmony_from']['genre']} : {f['harmony_from']['desc']}. "
-        f"Instruments : {', '.join(f['instrumentation'])}. "
-        f"Prod : {f['production']} ({f['tempo_feel']}). "
-        f"Tension a tenir : {f['tension']}. "
-        f"A eviter : {f.get('avoid', '-')}."
-    )
+    parts = [f"Fusion {f['genre_a']} x {f['genre_b']}."]
+    if f.get("constraints"):
+        cs = "; ".join(
+            f"{c['claim']} (selon {', '.join(c.get('held_by', ['?']))})"
+            for c in f["constraints"]
+        )
+        parts.append(f"Positions tenues (pas des verites objectives) : {cs}.")
+    parts += [
+        f"Groove de {f['groove_from']['genre']} : {f['groove_from']['desc']}.",
+        f"Harmonie de {f['harmony_from']['genre']} : {f['harmony_from']['desc']}.",
+        f"Instruments : {', '.join(f['instrumentation'])}.",
+        f"Prod : {f['production']} ({f['tempo_feel']}).",
+        f"Tension a tenir : {f['tension']}.",
+        f"A eviter : {f.get('avoid', '-')}.",
+    ]
     ex = exemplars(f)
     if ex:
         ex_str = "; ".join(
             f"{e['track']} ({e.get('cue', '')}, ref. {', '.join(e.get('validated_by', []))})"
             for e in ex
         )
-        brief += f" Exemplaires : {ex_str}."
-    return brief
+        parts.append(f"Exemplaires : {ex_str}.")
+    return " ".join(parts)
 
 
 def render_all():

@@ -36,7 +36,10 @@
     "tempo_feel": "70-80 bpm, half-time, mournful sway",
     "tension": "the intimacy of a fado vocal against the vast empty space of dub; longing pulled through echo",
     "references": ["Amália Rodrigues", "King Tubby", "Augustus Pablo melodica"],
-    "avoid": "busy arrangement, bright EDM, fast tempo",
+    "constraints": [
+      {"claim": "vocals sung in Portuguese", "held_by": ["Tristan"], "note": "position, pas verite objective : le fado est defini par sa langue selon Tristan"}
+    ],
+    "avoid": "busy arrangement, bright EDM, fast tempo, non-Portuguese vocals (per the position above)",
     "vocal": "Portuguese saudade vocal, intimate, aching"
   },
   {
