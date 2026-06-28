@@ -2,11 +2,21 @@
 
 > Spec **vivante**. C'est ici qu'on raffine le modèle ; le PoC ([`../poc/`](../poc/))
 > l'implémente quand la spec est stable, pour éviter de bricoler le JSON à chaque idée.
-> Voir aussi : [GENESIS.md](../GENESIS.md) (comment c'est né) · [personas-et-decision.md](personas-et-decision.md) (qui décide).
+> Voir aussi : [GENESIS.md](../GENESIS.md) (comment c'est né) · [personas-et-decision.md](personas-et-decision.md) (qui décide) · [exemples-et-schemas.md](exemples-et-schemas.md) (schémas + exemples).
 
 ## 0. Principe fondateur
 
 Le produit = **la méthode**, pas l'audio ni le prompt. Une fusion est décrite **une fois**, indépendamment de tout modèle ; un compilateur la rend vers une cible. **Suno / Udio / MusicGen / un musicien = backends interchangeables.**
+
+```mermaid
+flowchart LR
+  R["Représentation (source)<br/>model-agnostic"] --> C{"compilateur"}
+  C --> S["prompt Suno"]
+  C --> U["prompt Udio"]
+  C --> M["MusicGen"]
+  C --> H["brief humain"]
+  S -. "on écoute, on corrige" .-> R
+```
 
 ## 1. Deux couches
 
@@ -35,6 +45,17 @@ Chaque affirmation porte sa **source**. Le musicologique peut être vrai ou faux
 - **Molécule** = une fusion de deux atomes.
 
 Le levier de curation, c'est l'**atome** (~600 genres), pas la molécule (360 000 fusions). Footwork mal défini empoisonne ses 600 croisements ; corrigé une fois, il les répare tous.
+
+La boucle : on rend, l'oreille du cercle juge, et la correction retourne dans la **source** — un raté de genre corrige l'atome, un bel accident part au catalogue.
+
+```mermaid
+flowchart LR
+  Rep["représentation"] --> Cmp["compile"] --> Pr["prompt"] --> Mod["modèle"] --> Au["audio"]
+  Au --> Ear{"l'oreille du cercle"}
+  Ear -- "« pas du footwork »" --> Fix["corrige l'ATOME"]
+  Fix --> Rep
+  Ear -- "« super, mais... »" --> Cat["catalogue : malentendu trouvé"]
+```
 
 ## 5. Garde-fous
 
