@@ -5,13 +5,12 @@ Salut,
 On met la **méthodologie** du projet en débat ouvert, et ton avis compte vraiment.
 Voici comment le déposer — c'est plus simple que ça en a l'air.
 
-## 1. Accepte l'invitation
-Tu vas recevoir un email de **GitHub** (« Tristan invited you to collaborate »).
-Clique **Accept invitation**.
-→ Pas de compte GitHub ? Crée-en un gratuit en 2 minutes sur **github.com** (un email, un mot de passe, c'est tout).
+## 1. Aie un compte GitHub
+C'est tout ce qu'il faut — le dépôt est **public**, aucune invitation nécessaire.
+Pas de compte ? Crée-en un gratuit en 2 minutes sur **github.com** (un email, un mot de passe).
 
 ## 2. Ouvre la discussion
-Clique : **https://github.com/trivoallan/groove-engineer/pull/1**
+Clique : **https://github.com/trivoallan/le-malentendu/pull/1**
 Tu arrives sur la « Pull Request » : c'est notre **salle de discussion**.
 
 ## 3. Commente
