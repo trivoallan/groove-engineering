@@ -1,0 +1,62 @@
+[
+  {
+    "id": "maloya-x-acid-blues",
+    "genre_a": "Maloya",
+    "genre_b": "Acid blues",
+    "groove_from": {
+      "genre": "Maloya",
+      "desc": "rolling 6/8 maloya pulse, kayamb shaker, roulèr bass drum, call-and-response feel"
+    },
+    "harmony_from": {
+      "genre": "Acid blues",
+      "desc": "minor pentatonic blues phrasing, bent notes, TB-303 acid bassline as the harmonic spine"
+    },
+    "instrumentation": ["kayamb", "roulèr", "TB-303 acid bass", "slide guitar", "hand percussion"],
+    "production": "raw, hypnotic, lightly lo-fi, tape saturation, live-room feel",
+    "tempo_feel": "100-112 bpm, trance-inducing, swung",
+    "tension": "the 303 squelch fighting the acoustic maloya percussion; sacred trance meeting electronic acid",
+    "references": ["Danyèl Waro", "early Chicago acid", "John Lee Hooker drone"],
+    "avoid": "clean EDM gloss, quantized rigidity, festival drop",
+    "vocal": "Creole call-and-response, raw, incantatory"
+  },
+  {
+    "id": "fado-x-dub",
+    "genre_a": "Fado",
+    "genre_b": "Dub",
+    "groove_from": {
+      "genre": "Dub",
+      "desc": "deep one-drop bass, spacious off-beat skank, spring reverb and tape-echo throws"
+    },
+    "harmony_from": {
+      "genre": "Fado",
+      "desc": "minor-key saudade melody, Portuguese guitarra twelve-string ornaments, rubato melancholy"
+    },
+    "instrumentation": ["Portuguese guitarra", "deep dub bass", "melodica", "spring reverb", "tape delay", "sparse drums"],
+    "production": "cavernous, echo-drenched, analog, lots of negative space",
+    "tempo_feel": "70-80 bpm, half-time, mournful sway",
+    "tension": "the intimacy of a fado vocal against the vast empty space of dub; longing pulled through echo",
+    "references": ["Amália Rodrigues", "King Tubby", "Augustus Pablo melodica"],
+    "avoid": "busy arrangement, bright EDM, fast tempo",
+    "vocal": "Portuguese saudade vocal, intimate, aching"
+  },
+  {
+    "id": "chant-gregorien-x-footwork",
+    "genre_a": "Chant grégorien",
+    "genre_b": "Footwork",
+    "groove_from": {
+      "genre": "Footwork",
+      "desc": "160 bpm stuttering triplet kick patterns, chopped vocal stabs, rapid hi-hat rolls"
+    },
+    "harmony_from": {
+      "genre": "Chant grégorien",
+      "desc": "monophonic modal Latin plainchant, no harmony, free-floating sacred melody"
+    },
+    "instrumentation": ["male choir plainchant", "808 sub", "chopped vocal samples", "skittering hats"],
+    "production": "stark contrast: wet cathedral reverb on the chant, dry punchy drums underneath",
+    "tempo_feel": "160 bpm footwork, the chant floating half-time over it",
+    "tension": "timeless sacred monody versus hyper-kinetic Chicago footwork; eternity against the stutter",
+    "references": ["Ensemble Organum", "RP Boo", "DJ Rashad"],
+    "avoid": "cheesy trance pads, four-on-the-floor, literal church organ",
+    "vocal": "Latin plainchant, male choir, reverberant"
+  }
+]
