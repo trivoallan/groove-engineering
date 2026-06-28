@@ -5,6 +5,10 @@ dist/
 .slidev/
 *.log
 
+# python
+.venv/
+__pycache__/
+
 # os
 .DS_Store
 

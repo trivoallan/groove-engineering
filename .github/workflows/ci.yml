@@ -1,0 +1,25 @@
+name: ci
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  poc:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: poc
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      # the method's guards, run on every PR (E2): a fact without a checkable
+      # source, a crossing into a missing atom, a broken schema -> red build.
+      - run: python schema.py --check
+      - run: python atomgraph.py --check
+      - run: python validate.py
+      - run: python compile.py --check

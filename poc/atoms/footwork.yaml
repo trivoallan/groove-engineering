@@ -1,0 +1,41 @@
+# Footwork — genre atom.
+#
+# Status: proposed. Musicological claims sourced by an AI passer against the
+# English Wikipedia 'Footwork (genre)' article, fetched and verified. A secondary
+# source: the circle validates against primary sources before `validated`.
+#
+# The agent fills ONLY `musicological`. Human-owned layers left empty:
+#   constraints / felt (register 2, the circle) / political (register 3, the author) /
+#   exemplars (reference tracks the circle recognizes — RP Boo, DJ Rashad, DJ Spinn…).
+atom: footwork
+status: proposed
+
+musicological:
+  - claim: "emerged in Chicago in the late 1990s"
+    source:
+      citation: "Wikipedia (EN), 'Footwork (genre)', accessed June 2026"
+      locator: "https://en.wikipedia.org/wiki/Footwork_(genre)"
+  - claim: "derived from ghetto house with elements of hip hop; pioneered by RP Boo, DJ Rashad and DJ Clent"
+    source:
+      citation: "Wikipedia (EN), 'Footwork (genre)', accessed June 2026"
+      locator: "https://en.wikipedia.org/wiki/Footwork_(genre)"
+  - claim: "generally around 150–165 BPM, often around 160"
+    source:
+      citation: "Wikipedia (EN), 'Footwork (genre)', accessed June 2026"
+      locator: "https://en.wikipedia.org/wiki/Footwork_(genre)"
+  - claim: "beat-skipping kick drums, rapid and at times very sparse, syncopated with snares and claps; heavily syncopated samples; markedly lo-fi"
+    source:
+      citation: "Wikipedia (EN), 'Footwork (genre)', accessed June 2026"
+      locator: "https://en.wikipedia.org/wiki/Footwork_(genre)"
+  - claim: "closely tied to a fast, chaotic footwork dance, usually performed in battles with crews facing off in a circle"
+    source:
+      citation: "Wikipedia (EN), 'Footwork (genre)', accessed June 2026"
+      locator: "https://en.wikipedia.org/wiki/Footwork_(genre)"
+  - claim: "produced with samplers, drum machines (Roland TR-808), synthesizers and sequencers"
+    source:
+      citation: "Wikipedia (EN), 'Footwork (genre)', accessed June 2026"
+      locator: "https://en.wikipedia.org/wiki/Footwork_(genre)"
+  - claim: "key artists and crew/label: RP Boo, DJ Rashad, DJ Spinn, DJ Clent; the Teklife crew/label"
+    source:
+      citation: "Wikipedia (EN), 'Footwork (genre)', accessed June 2026"
+      locator: "https://en.wikipedia.org/wiki/Footwork_(genre)"

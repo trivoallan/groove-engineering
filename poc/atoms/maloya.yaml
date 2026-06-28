@@ -1,0 +1,52 @@
+# Maloya — genre atom.
+#
+# Status: proposed. The musicological claims were sourced by an AI passer (the
+# collector agent's job) against UNESCO ICH + Wikipedia (EN), both fetched and
+# verified. Secondary/tertiary sources: the circle still validates the
+# musicology against primary ethnomusicology before any claim becomes `validated`.
+#
+# The agent fills ONLY `musicological`. The human-owned layers are left empty on
+# purpose — the agent never writes them:
+#   constraints: conventions held by the maker (e.g. vocals in Reunion Creole)
+#   felt:        register 2 — the circle's experience (e.g. trance-inducing)
+#   political:   register 3 — the author's owned reading (e.g. a music of resistance)
+#   exemplars:   reference tracks the circle recognizes (Danyèl Waro, Christine Salem, Lindigo…)
+#
+# Two old fusions.json claims were dropped: "6/8 ternary" and a tempo — neither
+# source supports them. That is the sourcing discipline working.
+atom: maloya
+status: proposed
+
+musicological:
+  - claim: "created by enslaved Malagasy and Africans on Réunion's sugar plantations"
+    source:
+      citation: "UNESCO ICH, Representative List — Maloya (inscribed 2009, 4.COM)"
+      locator: "https://ich.unesco.org/en/RL/maloya-00249"
+  - claim: "songs employ a call-and-response structure between a soloist and a choir"
+    source:
+      citation: "Wikipedia (EN), 'Maloya', accessed June 2026"
+      locator: "https://en.wikipedia.org/wiki/Maloya"
+  - claim: "traditionally accompanied by percussion and a musical bow: roulèr (barrel drum), kayamb (sugar-cane rattle), pikér, sati, and bob"
+    source:
+      citation: "Wikipedia (EN), 'Maloya', accessed June 2026"
+      locator: "https://en.wikipedia.org/wiki/Maloya"
+  - claim: "originally dedicated to ancestral worship as part of a ritual"
+    source:
+      citation: "UNESCO ICH, Representative List — Maloya (inscribed 2009, 4.COM)"
+      locator: "https://ich.unesco.org/en/RL/maloya-00249"
+  - claim: "linked to ancestral rituals known as servis kabaré / service Kaf"
+    source:
+      citation: "Wikipedia (EN), 'Maloya', accessed June 2026"
+      locator: "https://en.wikipedia.org/wiki/Maloya"
+  - claim: "banned until the 1960s for its association with Creole culture; some groups remained banned into the 1980s for their autonomist beliefs and ties to the Communist Party of Réunion"
+    source:
+      citation: "Wikipedia (EN), 'Maloya', accessed June 2026"
+      locator: "https://en.wikipedia.org/wiki/Maloya"
+  - claim: "credited with rescuing the form from near-extinction (Firmin Viry); broad public recognition since the early 1980s"
+    source:
+      citation: "Wikipedia (EN), 'Maloya', accessed June 2026"
+      locator: "https://en.wikipedia.org/wiki/Maloya"
+  - claim: "inscribed in 2009 (4.COM) on the UNESCO Representative List of the Intangible Cultural Heritage of Humanity"
+    source:
+      citation: "UNESCO ICH, Representative List — Maloya"
+      locator: "https://ich.unesco.org/en/RL/maloya-00249"
