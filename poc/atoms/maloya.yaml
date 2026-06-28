@@ -1,13 +1,19 @@
 # Maloya — genre atom.
 #
-# Status: proposed. Sourced by an AI passer (the collector agent's job) against
-# UNESCO ICH + Wikipedia (EN), both fetched and verified. These are SECONDARY /
-# TERTIARY sources: the circle still validates the musicology against primary
-# ethnomusicology before any claim moves to `validated`.
+# Status: proposed. The musicological claims were sourced by an AI passer (the
+# collector agent's job) against UNESCO ICH + Wikipedia (EN), both fetched and
+# verified. Secondary/tertiary sources: the circle still validates the
+# musicology against primary ethnomusicology before any claim becomes `validated`.
 #
-# Two claims from the old fusions.json were dropped here because neither source
-# supports them: "6/8 ternary" (a felt description, not sourced) and a specific
-# tempo. The trance character lives in `felt` instead. That is the guard working.
+# The agent fills ONLY `musicological`. The human-owned layers are left empty on
+# purpose — the agent never writes them:
+#   constraints: conventions held by the maker (e.g. vocals in Reunion Creole)
+#   felt:        register 2 — the circle's experience (e.g. trance-inducing)
+#   political:   register 3 — the author's owned reading (e.g. a music of resistance)
+#   exemplars:   reference tracks the circle recognizes (Danyèl Waro, Christine Salem, Lindigo…)
+#
+# Two old fusions.json claims were dropped: "6/8 ternary" and a tempo — neither
+# source supports them. That is the sourcing discipline working.
 atom: maloya
 status: proposed
 
@@ -44,23 +50,3 @@ musicological:
     source:
       citation: "UNESCO ICH, Representative List — Maloya"
       locator: "https://ich.unesco.org/en/RL/maloya-00249"
-
-constraints:
-  - claim: "vocals in Reunion Creole"
-    held_by: ["the maker"]
-
-felt:
-  - text: "trance-inducing, ancestral, Indian-Ocean"
-    held_by: ["a listener"]
-
-# register 3 — owned by the author. The agent never writes here.
-political:
-  - text: "a music of resistance: the history of its banning is the charge it carries; crossing it without that charge flattens it"
-    held_by: ["the author"]
-
-exemplars:
-  - { track: "Danyèl Waro", recognized_by: ["the circle"] }
-  - { track: "Christine Salem", recognized_by: ["the circle"] }
-  - { track: "Lindigo", recognized_by: ["the circle"] }
-  - { track: "Granmoun Lélé", recognized_by: ["the circle"] }
-  - { track: "Firmin Viry", recognized_by: ["the circle"] }
