@@ -9,5 +9,5 @@ NOM="${2:?Prénom manquant}"
 MSG="${3:?Message manquant}"
 
 gh pr comment "$PR" \
-  --repo trivoallan/le-malentendu \
+  --repo trivoallan/groove-engineering \
   --body "👂 **${NOM}** (via WhatsApp) : *${MSG}*"

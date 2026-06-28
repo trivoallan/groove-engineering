@@ -1,40 +1,47 @@
-# groove-engineer — *Le Malentendu*
+🇬🇧 **English** · [🇫🇷 Français](README.fr.md)
 
-> « La musique qui n'a jamais existé — livrée propre, à l'échelle, et libre. »
->
-> **non = malentendu**
+# Le Malentendu
 
-Un moteur qui fabrique de la musique à partir de la fusion de genres (~360 000 croisements possibles), la trie, l'enrichit en droits et provenance, et la livre comme un **actif exploitable**. Né d'un canular — un label fantôme — devenu une infrastructure.
+> "Music that never existed."
+> **non = malentendu** *(no = misunderstanding)*
 
-## Architecture de marque
+An **open method** for fusing musical genres. The product is the **method** — a
+*model-agnostic* representation of a fusion + a compiler — not the audio, not the
+prompt. The models (Suno, Udio, MusicGen, a human musician) are **interchangeable
+backends**.
 
-| Élément | Rôle |
+Free, under **AGPLv3**.
+
+> 🗣️ **Open RFC — come comment:** [PR #1 — Methodology](https://github.com/trivoallan/groove-engineering/pull/1) · [comment inline](https://github.com/trivoallan/groove-engineering/pull/1/files)
+
+## This repo
+
+| | |
 |---|---|
-| **groove-engineer** | le **moteur** — produit open source à venir (**AGPLv3**) |
-| **Malentendu Records** | le **label** — l'arm artistique, la preuve |
-| **Le Malentendu** | la **musique produite** — « c'est du Malentendu » |
-| **« non = malentendu »** | la **signature** |
+| [`process/method.md`](process/method.md) | the spec: 2 layers (sound + text), 3 registers (musicological / felt / political), atoms vs molecules, political vision |
+| [`process/political-vision.md`](process/political-vision.md) | the political vision in full — six theses: authenticity, commons, creolization, opacity, self-implication, meaning |
+| [`process/examples.md`](process/examples.md) | diagrams + 3 real worked examples |
+| [`process/rfc/`](process/rfc/) | the RFCs — the method put up for debate. **Discussion happens in the Pull Requests.** |
+| [`poc/`](poc/) | the proof: `python3 poc/compile.py` compiles a fusion into a Suno prompt **and** a human brief (two backends, one source) |
+| [`catalogue/misunderstandings.md`](catalogue/misunderstandings.md) | the *found misunderstandings* — the happy accidents we keep |
+| [`GENESIS.md`](GENESIS.md) | how the project was born, in the open |
 
-## Ce dépôt — l'atelier (privé)
+## Take part
 
-| Dossier | Contenu |
-|---|---|
-| [`pitch/`](pitch/) | 4 decks (art · commercial · hybride · **Anne**) + notes parlées, sources Slidev + PDF |
-| [`legal/`](legal/) | questions pour avocat IP/musique (droit FR) + comparatif des modèles IA |
-| [`outreach/`](outreach/) | interlocuteurs à contacter (par priorité) + kit de contact (test de demande + mails) |
-| [`brand/`](brand/) | identité de marque (nom, signature, usage) |
+Read the open RFC and **comment on the Pull Request**. Tag your register:
+🎼 musicological (a fact) · 👂 felt (subjective) · ✊ political (values).
+Disagreement is the point.
 
-**Voir les decks :** `cd pitch && pnpm install && pnpm dev` → `localhost:3030` (notes présentateur sur `/presenter`).
+## Run the proof
 
-## Statut
+```bash
+python3 poc/compile.py          # compile fusions -> Suno + brief
+python3 poc/compile.py --check  # self-check
+```
 
-**Pré-produit** — stade idée + validation. La prochaine étape décisive n'est pas du code : c'est **un café avec un acheteur sync** (cf. [`outreach/`](outreach/)). Tout le reste attend ce signal.
+## Languages
 
-## ⚠️ Privé — et le restera
-
-Ce dépôt est l'**atelier** : decks investisseurs, stratégie commerciale, analyse de risques, contacts. Ce n'est **pas** le moteur. Il reste privé.
-
-Le moteur open source vivra dans un **dépôt public séparé**, ne contenant que le **code** + `LICENSE` (AGPLv3) + `CONTRIBUTING` (avec CLA). Jamais `pitch/`, `legal/`, `outreach/`, `brand/`.
+**English is canonical** (`*.md`); every document has a French sibling (`*.fr.md`). 100% bilingual.
 
 ---
 

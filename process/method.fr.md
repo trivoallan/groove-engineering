@@ -1,8 +1,10 @@
+[🇬🇧 English](method.md) · 🇫🇷 **Français**
+
 # La méthode — modèle de représentation
 
 > Spec **vivante**. C'est ici qu'on raffine le modèle ; le PoC ([`../poc/`](../poc/))
 > l'implémente quand la spec est stable, pour éviter de bricoler le JSON à chaque idée.
-> Voir aussi : [GENESIS.md](../GENESIS.md) (comment c'est né) · [personas-et-decision.md](personas-et-decision.md) (qui décide) · [exemples-et-schemas.md](exemples-et-schemas.md) (schémas + exemples).
+> Voir aussi : [GENESIS.md](../GENESIS.fr.md) (comment c'est né) · [personas.md](personas.fr.md) (qui décide) · [examples.md](examples.fr.md) (schémas + exemples).
 
 ## 0. Principe fondateur
 
@@ -64,6 +66,8 @@ flowchart LR
 
 ## 6. La vision politique (registre 3)
 
+> **Texte intégral :** [`political-vision.fr.md`](political-vision.fr.md) — les six thèses et leurs références.
+
 Salle des machines, pas paroles. Énactée dans les croisements, la licence, la forgerie — presque jamais dite.
 
 - **Authenticité = pouvoir** : on forge le réel pour exposer qu'il est *certifié*, pas essentiel. *(Debord, Benjamin.)*
@@ -89,12 +93,12 @@ Salle des machines, pas paroles. Énactée dans les croisements, la licence, la 
 
 ## 8. Le roster de curateurs (par registre)
 
-- **musicologique** → un musicologue / praticien-expert. **Trou actuel : il en manque un.** (Eric chevauche : praticien footwork + oreille.)
-- **ressenti** → le cercle d'auditeurs (Coline, Nelly, Eric, toi…).
+- **musicologique** → un musicologue / praticien-expert. **Trou actuel : il en manque un.** (un praticien-expert peut chevaucher : praticien + oreille.)
+- **ressenti** → le cercle d'auditeurs.
 - **texte** → paroliers + les garde-fous bitwize.
 - **politique** → toi : la vision est assumée et attribuée.
 
-Processus de décision complet : [personas-et-decision.md](personas-et-decision.md).
+Processus de décision complet : [personas.md](personas.fr.md).
 
 ---
 

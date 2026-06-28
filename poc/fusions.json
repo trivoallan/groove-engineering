@@ -17,12 +17,12 @@
     "tension": "the 303 squelch threading through acoustic maloya percussion; electronic acid as a guest in a Reunionese trance, not a takeover",
     "references": ["Danyèl Waro", "Christine Salem", "Lindigo", "Granmoun Lélé", "early Chicago acid (texture only)"],
     "constraints": [
-      {"claim": "Reunionese maloya percussion must lead; acid blues stays a guest layer", "held_by": ["Tristan"], "note": "apres derive vers le rock sovietique au v1 (cf. catalogue MR-001)"}
+      {"claim": "Reunionese maloya percussion must lead; acid blues stays a guest layer", "held_by": ["the maker"], "note": "after v1 drifted to Soviet rock (cf. catalogue MR-001)"}
     ],
     "avoid": "70s blues-rock band, Eastern-European / Soviet rock, dominant electric guitar, anything erasing the maloya percussion; clean EDM gloss, festival drop",
     "vocal": "Creole call-and-response, raw, incantatory, in Reunion Creole",
     "ressenti": [
-      {"text": "v1 a derive vers le bloc sovietique (« emission zero, Hongrie d'URSS »), maloya disparu -> atome renforce ; voir catalogue MR-001", "held_by": ["Nelly"]}
+      {"text": "v1 drifted to the Eastern bloc ('test-card broadcast, USSR-era Hungary'), the maloya vanished -> atom strengthened; see catalogue MR-001", "held_by": ["a listener"]}
     ]
   },
   {
@@ -43,22 +43,22 @@
     "tension": "the intimacy of a fado vocal against the vast empty space of dub; longing pulled through echo",
     "references": ["Amália Rodrigues", "King Tubby", "Augustus Pablo melodica"],
     "constraints": [
-      {"claim": "vocals sung in Portuguese", "held_by": ["Tristan"], "note": "position, pas verite objective : le fado est defini par sa langue selon Tristan"}
+      {"claim": "vocals sung in Portuguese", "held_by": ["the maker"], "note": "a held position, not an objective truth: fado is defined by its language, per the maker"}
     ],
     "avoid": "busy arrangement, bright EDM, fast tempo, non-Portuguese vocals (per the position above)",
     "vocal": "Portuguese saudade vocal, intimate, aching"
   },
   {
-    "id": "chant-gregorien-x-footwork",
-    "genre_a": "Chant grégorien",
+    "id": "gregorian-chant-x-footwork",
+    "genre_a": "Gregorian chant",
     "genre_b": "Footwork",
     "groove_from": {
       "genre": "Footwork",
       "desc": "160 bpm but stripped and spacious, kick-driven: syncopated kicks slightly off the grid (triplet swing) giving a rolling, hypnotic, tribal groove; sparse claps, one repeated vocal sample, lots of air",
-      "exemplar": {"track": "Calculon", "cue": "~1:00", "note": "passage caractéristique du genre", "validated_by": ["Eric", "Nelly Babillon"]}
+      "exemplar": {"track": "Calculon", "cue": "~1:00", "note": "passage characteristic of the genre", "validated_by": ["a practitioner", "a listener"]}
     },
     "harmony_from": {
-      "genre": "Chant grégorien",
+      "genre": "Gregorian chant",
       "desc": "monophonic modal Latin plainchant, no harmony, free-floating sacred melody"
     },
     "instrumentation": ["sparse 808 kick", "handclaps", "single repeated vocal sample", "male choir plainchant"],
@@ -66,7 +66,7 @@
     "tempo_feel": "160 bpm felt as a spacious hypnotic pulse, kicks doing the work, the chant floating freely over the displaced groove",
     "tension": "timeless monophonic chant riding a stripped, off-grid footwork kick; eternity over a hypnotic tribal pulse",
     "references": ["Ensemble Organum", "RP Boo", "DJ Rashad", "Traxman"],
-    "avoid": "busy hi-hat rolls, chopped-vocal chaos, density, juke/EDM cliché — footwork is épuré and kick-driven (corr. Eric)",
+    "avoid": "busy hi-hat rolls, chopped-vocal chaos, density, juke/EDM cliché — footwork is stripped and kick-driven (corr. practitioner)",
     "vocal": "Latin plainchant, male choir, reverberant"
   }
 ]

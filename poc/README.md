@@ -1,31 +1,33 @@
-# PoC — la méthode, pas le modèle
+🇬🇧 **English** · [🇫🇷 Français](README.fr.md)
 
-Principe : **le produit, c'est la méthode**, pas l'audio ni le prompt Suno.
+# PoC — the method, not the model
 
-Une fusion est décrite **une fois** (`fusions.json`), indépendamment de tout
-modèle. Un compilateur la rend vers une cible. **Suno n'est qu'un backend
-interchangeable** — on en montre deux ici pour le prouver.
+Principle: **the product is the method**, not the audio or the Suno prompt.
 
-| Fichier | Rôle |
+A fusion is described **once** (`fusions.json`), independently of any model. A
+compiler renders it to a target. **Suno is just one interchangeable backend** —
+we show two here to prove it.
+
+| File | Role |
 |---|---|
-| `fusions.json` | **la source** — des représentations de fusions, model-agnostic (groove, harmonie, instrumentation, prod, tension, références) |
-| `compile.py` | **le compilateur** — `compile_suno()` (prompt EN) + `compile_brief()` (brief humain FR) depuis la même source |
+| `fusions.json` | **the source** — model-agnostic fusion representations (groove, harmony, instrumentation, production, tension, references) |
+| `compile.py` | **the compiler** — `compile_suno()` (EN prompt) + `compile_brief()` (human brief) from the same source |
 
-## Lancer
+## Run
 
 ```bash
-python3 compile.py          # compile toutes les fusions -> Suno + brief
-python3 compile.py --check  # self-check, aucun modèle requis
+python3 compile.py          # compile all fusions -> Suno + brief
+python3 compile.py --check  # self-check, no model required
 ```
 
-## Valider la méthode
+## Validate the method
 
-Colle un prompt Suno dans Suno, écoute. **Si ça sonne, la méthode tient** — Suno
-n'était que le premier rendu. Le jour où tu changes de modèle (Udio, MusicGen
-auto-hébergé…), tu écris un nouveau compilateur ; **la source ne bouge pas.**
+Paste a Suno prompt into Suno, listen. **If it sounds right, the method holds** —
+Suno was just the first render. The day you switch models (Udio, self-hosted
+MusicGen…), you write a new compiler; **the source doesn't move.**
 
-C'est tout le PoC : prouver que la valeur vit dans la *représentation*, pas dans
-le tuyau. Prompts Suno en anglais (règle projet).
+That's the whole PoC: proving the value lives in the *representation*, not the
+pipe. (Suno prompts in English, per project rule.)
 
 ---
 

@@ -8,7 +8,7 @@
 
 **Listen:** [SoundCloud link](https://soundcloud.com/malentendu-records/[slug])
 
-**Leave feedback:** [open the discussion](https://github.com/trivoallan/le-malentendu/pull/[N])
+**Leave feedback:** [open the discussion](https://github.com/trivoallan/groove-engineering/pull/[N])
 
 ---
 

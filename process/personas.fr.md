@@ -1,7 +1,9 @@
+[🇬🇧 English](personas.md) · 🇫🇷 **Français**
+
 # Personas & processus décisionnel
 
 > La méthode explicite derrière les décisions du projet. On l'expose, comme le
-> reste (voir [`GENESIS.md`](../GENESIS.md)). Principe de base : **les personas-IA
+> reste (voir [`GENESIS.md`](../GENESIS.fr.md)). Principe de base : **les personas-IA
 > aiguisent, les humains ancrent, c'est toi qui décides.**
 
 ## Deux sens du mot « persona »
@@ -36,10 +38,10 @@ L'axe que l'optimisation startup ne calcule pas. Invoquées dès que l'âme est 
 - **Guy Debord** (situationniste) — détournement, récupération, spectacle. *« Situation vécue, ou accumulation de spectacle ? »*
 - **Steve Albini** (artisan, éthique du deal) — métier, posséder son travail, refuser le parasite. *« Qui se fait avoir ici ? C'est honnête ? »*
 
-### D. Advisors humains (réels, mappés en rôles)
-- **Anne** — opératrice du divertissement (label / pub / prod AV) + finance. Rôle : **marché réel, droits, accès**.
-- **Eric** — champion DMC. Rôle : **oracle qualité** (le morceau tient-il ?) + réseau.
-- **Yann** — compositeur (Stray) + builder génératif + net-artiste. Rôle : **co-bâtisseur** + **canari du milieu créatif** + complice de l'âme.
+### D. Advisors humains (réels, mappés en rôles — noms tenus privés)
+- **Opérateur·rice de l'industrie** (label / prod AV / pub). Rôle : **marché réel, droits, accès**.
+- **Praticien-expert** (ex. turntabliste de haut niveau). Rôle : **oracle qualité** (le morceau tient-il ?) + réseau.
+- **Compositeur / builder génératif**. Rôle : **co-bâtisseur** + **canari du milieu créatif** + complice de l'âme.
 
 ## Le processus (7 temps)
 
@@ -78,3 +80,4 @@ l'ajoute pas.
 ---
 
 *non = malentendu*
+

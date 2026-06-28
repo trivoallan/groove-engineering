@@ -8,7 +8,7 @@
 
 **Écouter :** [lien SoundCloud](https://soundcloud.com/malentendu-records/[slug])
 
-**Laisser un retour :** [ouvrir la discussion](https://github.com/trivoallan/le-malentendu/pull/[N])
+**Laisser un retour :** [ouvrir la discussion](https://github.com/trivoallan/groove-engineering/pull/[N])
 
 ---
 

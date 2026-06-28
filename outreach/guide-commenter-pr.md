@@ -10,9 +10,9 @@ C'est tout ce qu'il faut — le dépôt est **public**, aucune invitation néces
 Pas de compte ? Crée-en un gratuit en 2 minutes sur **github.com** (un email, un mot de passe).
 
 ## 2. Ouvre la discussion
-Clique : **https://github.com/trivoallan/le-malentendu/pull/1**
+Clique : **https://github.com/trivoallan/groove-engineering/pull/1**
 Tu arrives sur la « Pull Request » : c'est notre **salle de discussion**.
-Pour aller droit là où on commente en ligne : **https://github.com/trivoallan/le-malentendu/pull/1/files**
+Pour aller droit là où on commente en ligne : **https://github.com/trivoallan/groove-engineering/pull/1/files**
 
 ## 3. Commente
 Deux façons :

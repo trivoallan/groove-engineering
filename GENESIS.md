@@ -1,91 +1,67 @@
-# Genèse — la démarche, à découvert
+🇬🇧 **English** · [🇫🇷 Français](GENESIS.fr.md)
 
-> **Pourquoi ce document.** Le making-of fait partie de l'œuvre. Ce projet n'est
-> pas né de l'intuition solitaire d'un fondateur : il a été **brassé, grillé et
-> contredit** par une série d'outils d'IA — un office-hours façon YC, un
-> contre-feu situationniste, un panel de personas adverses. Plutôt que de cacher
-> ça derrière le récit habituel, on l'expose. C'est le même geste que le label :
-> montrer la forgerie, nommer le malentendu. La transparence comme détournement
-> du spectacle de la création.
+# Genesis — the process, in the open
+
+> **Why this document.** The making-of is part of the work. This project wasn't
+> born from a founder's lone intuition: it was **stirred, grilled and contradicted**
+> by a series of AI tools — a YC-style office-hours, a situationist counter-fire,
+> a panel of adversarial personas. Rather than hide that behind the usual story,
+> we expose it. Same gesture as the label: show the forgery, name the
+> misunderstanding. Transparency as a détournement of the spectacle of creation.
 >
-> Outils : Claude Code + **gstack** (skills `office-hours`, `guy-debord`,
+> Tools: Claude Code + **gstack** (skills `office-hours`, `guy-debord`,
 > `challenge-gstack-personas`).
 
-## Le point de départ
+## The starting point
 
-Un dépôt vide. Un tableur : ~600 genres musicaux en lignes, les mêmes en
-colonnes, **~360 000 cases vides**. Rien d'autre. Pas de produit, pas de plan.
+An empty repo. One spreadsheet: ~600 music genres as rows, the same as columns,
+**~360,000 empty cells**. Nothing else. No product, no plan.
 
-## Phase 1 — l'office-hours (gstack)
+## Phase 1 — office-hours (gstack)
 
-Un diagnostic façon YC, mené en mode « questions qui piquent ». Ce qu'il a mis
-au jour, sans complaisance :
+A YC-style diagnostic, run in "questions that sting" mode. What it surfaced, with no comfort:
 
-- **La demande : « pour moi-même. »** n=1, zéro preuve externe.
-- **Le piège nommé :** « solution en quête de problème » — vouloir
-  *industrialiser* un geste qu'on n'a jamais exécuté une seule fois à la main.
-  On ne bâtit pas la chaîne de montage avant d'avoir fabriqué une voiture.
-- **Le retournement :** la rareté n'est pas le volume. Suno en génère à l'infini.
-  Le rare, c'est la **curation** — jeter 95 %, garder l'oreille. 360 000 n'est
-  pas un trésor, c'est une botte de foin.
-- **La bifurcation,** qui structure tout le reste : **l'usine** (un pipeline qui
-  tourne sans toi) contre **l'instrument** (un truc qu'on joue).
+- **Demand: "for myself."** n=1, zero external evidence.
+- **The trap, named:** "solution in search of a problem" — wanting to *industrialize* a gesture never performed even once by hand. You don't build the assembly line before making one car.
+- **The reversal:** scarcity isn't volume. Suno generates it endlessly. What's rare is **curation** — throw away 95%, keep the ear. 360,000 isn't a treasure, it's a haystack.
+- **The fork** that structures everything else: **the factory** (a pipeline that runs without you) vs **the instrument** (a thing you play).
 
-## Phase 2 — le contre-feu situationniste (Debord)
+## Phase 2 — the situationist counter-fire (Debord)
 
-Une voix situationniste a détourné le cadrage startup lui-même :
+A situationist voice détourned the startup framing itself:
 
-- L'usine *est* le spectacle. L'automatisation est le meurtre de la dérive : une
-  machine qui sort 360 000 disques ne peut plus être surprise.
-- La vraie question n'est pas « est-ce que ça vaut la peine d'être construit »,
-  mais **« est-ce la construction d'une situation vécue, ou une accumulation de
-  spectacle de plus ? »**
-- Verdict : la valeur vit dans le geste vécu (l'instrument), pas dans le débit
-  (l'usine). Ce que l'office-hours disait en langage produit, Debord le disait en
-  langage de refus.
+- The factory *is* the spectacle. Automation is the murder of the dérive: a machine that ships 360,000 records can no longer be surprised.
+- The real question isn't "is this worth building," but **"is this the construction of a lived situation, or one more accumulation of spectacle?"**
+- Verdict: value lives in the lived gesture (the instrument), not in throughput (the factory). What office-hours said in product language, Debord said in the language of refusal.
 
-## Phase 3 — le challenge adverse (personas)
+## Phase 3 — the adversarial challenge (personas)
 
-Un panel de personas hostiles (finance, ingénierie, direction, juridique) a
-attaqué le plan. Les trouvailles principales :
+A panel of hostile personas (finance, engineering, leadership, legal) attacked the plan. Main findings:
 
-- **🔴 La fondation juridique d'abord.** Vendre de la musique générée à des
-  acheteurs sensibles aux droits : c'est conditionnel, et la condition (la CGU du
-  modèle amont + la copyrightabilité) définit le produit. À vérifier *avant* de
-  construire quoi que ce soit.
-- **🔴 La contradiction d'identité.** Prank situationniste / démo d'ingénierie /
-  SaaS B2B / mouvement open source : quatre projets, quatre clients. Ils ne
-  peuvent pas tous coexister. Il faut choisir.
-- **🟠 La demande non testée.** Le premier signal doit venir de quelqu'un qui
-  peut dire **non** — pas d'un proche qui encourage.
-- **🟠 Le sur-dimensionnement.** Bâtir l'usine complète quand le livrable réel
-  n'en a pas besoin : du gold-plating.
+- **🔴 Legal foundation first.** Selling AI-generated music to rights-sensitive buyers is conditional, and the condition (the upstream model's ToS + copyrightability) defines the product. Verify *before* building anything.
+- **🔴 Identity contradiction.** Situationist prank / engineering demo / B2B SaaS / open-source movement: four projects, four customers. They can't all coexist. Choose.
+- **🟠 Untested demand.** The first signal must come from someone who can say **no** — not a supportive relative.
+- **🟠 Over-scoping.** Building the full factory when the real deliverable doesn't need it: gold-plating.
 
-## Les décisions qui en sont sorties
+## The decisions that came out of it
 
-- **L'instrument plutôt que l'usine.** L'humain n'est pas *dans* la boucle —
-  l'humain *est* le produit.
-- **Résolument libre — AGPLv3.** Un commun, pas un produit fermé. La licence
-  agressive comme bouclier, pas comme cadeau.
-- **Le droit français comme angle.** Pas de droit d'auteur sur l'output pur, mais
-  un **droit voisin de producteur** sur le master + la contribution humaine = à
-  la fois l'actif licenciable et la voie légale.
-- **Le nom : Le Malentendu.** Signature : **non = malentendu** (homophone non /
-  nom assumé).
+- **The instrument over the factory.** The human isn't *in* the loop — the human *is* the product.
+- **Resolutely free — AGPLv3.** A commons, not a closed product. The aggressive copyleft as a shield, not a gift.
+- **French law as the angle.** No copyright on pure output, but a **producer's neighboring right** on the master + human contribution = both the licensable asset and the legal path.
+- **The name: Le Malentendu.** Signature: **non = malentendu** (the deliberate *non / nom* — "no" / "name" — homophone).
 
-## Pourquoi à découvert
+## Why in the open
 
-Le récit habituel de la startup efface le doute, les contradictions, l'aide
-reçue, pour vendre l'image d'une vision inévitable. C'est précisément le
-spectacle que ce projet prend pour cible. Alors on garde les traces : les
-mauvaises réponses du départ, les questions qui ont fait mal, les voix qui ont
-contredit. Le projet a été un malentendu dès le premier jour — un tableur pris
-pour un trésor — et il s'est trouvé en se faisant corriger.
+The usual startup story erases doubt, contradiction, the help received, to sell
+the image of an inevitable vision. That's exactly the spectacle this project
+targets. So we keep the traces: the wrong early answers, the questions that hurt,
+the voices that pushed back. The project was a misunderstanding from day one — a
+spreadsheet mistaken for a treasure — and it found itself by being corrected.
 
-Montrer ça, c'est l'œuvre autant que le moteur.
+Showing that is the work as much as the engine.
 
-> La méthode explicite — roster des personas + processus décisionnel :
-> [`process/personas-et-decision.md`](process/personas-et-decision.md).
+> The explicit method — persona roster + decision process:
+> [`process/method.md`](process/method.md) · [`process/personas.md`](process/personas.md).
 
 ---
 
