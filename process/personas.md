@@ -33,6 +33,7 @@ Business roles that attack the plan. Convene 2-3 depending on the decision.
 The axis startup optimization can't compute. Invoked whenever the soul is at stake.
 - **Guy Debord** (situationist) — détournement, recuperation, spectacle. *"A lived situation, or accumulation of spectacle?"*
 - **Steve Albini** (tradesman, deal ethics) — craft, owning your work, refusing the parasite. *"Who's getting screwed here? Is it honest?"*
+- **Lawrence Lessig** (free-culture lawyer, *"code is law"*) — the commons, remix rights, copyright as enclosure; architecture regulates as much as law. *"Does this grow the commons or just draw from it? Your compiler is law — what does it forbid, and who decided?"*
 
 ### D. Human advisors (real, mapped to roles — names kept private)
 - **Entertainment-industry operator** (label / AV production / advertising). Role: **real market, rights, access**.
