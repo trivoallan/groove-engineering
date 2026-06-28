@@ -1,0 +1,52 @@
+# Dub — genre atom. Status: proposed. Musicological claims sourced and verified
+# against the English Wikipedia articles "Dub music" and "King Tubby" (fetched and
+# read June 2026). The agent fills `musicological` only; the human-owned layers
+# (constraints / felt / political / exemplars) are left empty.
+atom: dub
+status: proposed
+
+musicological:
+  - claim: "grew out of reggae in the late 1960s and early 1970s"
+    source:
+      citation: "Wikipedia (EN), 'Dub music', accessed June 2026"
+      locator: "https://en.wikipedia.org/wiki/Dub_music"
+  - claim: "commonly considered a subgenre of reggae, though it developed to extend beyond that style"
+    source:
+      citation: "Wikipedia (EN), 'Dub music', accessed June 2026"
+      locator: "https://en.wikipedia.org/wiki/Dub_music"
+  - claim: "pioneered by recording engineers and producers such as Osbourne 'King Tubby' Ruddock, Hopeton 'Scientist' Brown, Lee 'Scratch' Perry, and Errol Thompson, beginning in the late 1960s"
+    source:
+      citation: "Wikipedia (EN), 'Dub music', accessed June 2026"
+      locator: "https://en.wikipedia.org/wiki/Dub_music"
+  - claim: "consists of remixes of existing recordings, manipulated by removing the vocal parts and emphasizing the rhythm section"
+    source:
+      citation: "Wikipedia (EN), 'Dub music', accessed June 2026"
+      locator: "https://en.wikipedia.org/wiki/Dub_music"
+  - claim: "the stripped-down drum-and-bass track at its core is sometimes referred to as a 'riddim'"
+    source:
+      citation: "Wikipedia (EN), 'Dub music', accessed June 2026"
+      locator: "https://en.wikipedia.org/wiki/Dub_music"
+  - claim: "applies studio effects such as delay, reverb, and echo to the instrumental tracks"
+    source:
+      citation: "Wikipedia (EN), 'Dub music', accessed June 2026"
+      locator: "https://en.wikipedia.org/wiki/Dub_music"
+  - claim: "built on the 'version' — an alternative cut of a song made for the DJ to 'toast' over, usually with some or all of the original vocal removed"
+    source:
+      citation: "Wikipedia (EN), 'Dub music', accessed June 2026"
+      locator: "https://en.wikipedia.org/wiki/Dub_music"
+  - claim: "the version was typically the B-side of a single, used for experimenting and for giving DJs something to talk over"
+    source:
+      citation: "Wikipedia (EN), 'Dub music', accessed June 2026"
+      locator: "https://en.wikipedia.org/wiki/Dub_music"
+  - claim: "the development of sound system culture influenced the development of studio techniques in Jamaica"
+    source:
+      citation: "Wikipedia (EN), 'Dub music', accessed June 2026"
+      locator: "https://en.wikipedia.org/wiki/Dub_music"
+  - claim: "in spring 1973 Lee 'Scratch' Perry released 'Upsetters 14 Dub Blackboard Jungle', mixed in collaboration with King Tubby"
+    source:
+      citation: "Wikipedia (EN), 'Dub music', accessed June 2026"
+      locator: "https://en.wikipedia.org/wiki/Dub_music"
+  - claim: "King Tubby (Osbourne Ruddock) 'played' the mixing desk like an instrument, using effects units to bring instruments and vocals in and out of the mix"
+    source:
+      citation: "Wikipedia (EN), 'King Tubby', accessed June 2026"
+      locator: "https://en.wikipedia.org/wiki/King_Tubby"
