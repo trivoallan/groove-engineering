@@ -37,7 +37,9 @@ Decided in session:
    self-implication. A graph that drops it *is* the extraction the method critiques (see below).
 
 Not building: register-2/3 *automation* (the agent never produces felt or political claims) — but
-register 3 is fully in the model. Also out: a real graph database, or 600 atoms up front.
+register 3 is in the model (political claims + the crossing coherence answers). Opacity is honored
+as a *practice*, not a schema field (see the politics section). Also out: a real graph database, or
+600 atoms up front.
 
 ## Premises (validated in session)
 
@@ -95,7 +97,10 @@ class Status(str, Enum):
 
 class Source(BaseModel):
     citation: str                       # "Danyèl Waro, interview, Télérama 2018"
-    locator: str | None = None          # page / timecode / URL — where in the source
+    locator: str                        # REQUIRED, machine-checkable: URL / DOI / ISBN+page /
+                                        #   timecode. A CI shape-check validates it, so a
+                                        #   fabricated source is catchable WITHOUT a musicologist.
+                                        #   no locator, no fact.
 
 class MusicologicalClaim(BaseModel):    # register 1 — falsifiable
     claim: str
@@ -107,10 +112,6 @@ class HeldClaim(BaseModel):             # register 2 (felt) or 3 (political) —
     register: str = Field(pattern="^(felt|political)$")
     text: str
     held_by: list[str] = Field(min_length=1)   # a position always has an owner
-
-class Opacity(BaseModel):               # §6 right to opacity — what we refuse to make legible
-    refusal: str                        # "the servis kabaré's ritual function isn't ours to decompose"
-    held_by: list[str] = Field(min_length=1)   # owned — the agent never writes this
 
 class Constraint(BaseModel):
     claim: str                          # "vocals in Reunion Creole"
@@ -128,11 +129,10 @@ class Atom(BaseModel):
     constraints: list[Constraint] = []
     felt: list[HeldClaim] = []                   # register 2 — the circle
     political: list[HeldClaim] = []              # register 3 — owned, agent NEVER fills
-    opacity: list[Opacity] = []                  # §6 — owned, agent NEVER fills
     exemplars: list[Exemplar] = []
     curators: list[str] = []
 
-# what the agent emits — register 1 only, by construction (no political/opacity field exists):
+# what the agent emits — register 1 only, by construction (no political field exists):
 class MusicologicalReport(BaseModel):
     atom: str
     musicological: list[MusicologicalClaim]
@@ -171,9 +171,6 @@ political:                     # owned by the author — the agent never writes 
   - register: political
     text: "maloya is a music of resistance (banned under colonial Réunion); crossing it without carrying that charge flattens it"
     held_by: ["the author"]
-opacity:                       # §6 — what we refuse to make fully legible
-  - refusal: "the servis kabaré's ancestral/ritual function is not ours to decompose into tags"
-    held_by: ["the author"]
 exemplars:
   - { track: "Danyèl Waro", recognized_by: ["the circle"] }
 ```
@@ -193,25 +190,43 @@ self_implication: "yes — an AI crossing two colonized-culture musics is the ex
 held_by: ["the author"]
 ```
 
+### Status & compile modes
+
+A claim's `status` drives whether it renders. Two modes, because gating "validated only" while the
+roster has no musicologist (§8) would compile *nothing* and the ear could never judge (§7):
+
+| status     | `compile --draft` (default) | `compile --strict` | meaning |
+|------------|------------------------------|--------------------|---------|
+| proposed   | included (flagged)           | excluded           | drafted, not vetted; the ear still judges |
+| validated  | included                     | included           | a human signed off (`signed_by` non-empty) |
+| contested  | author picks, or both shown  | excluded           | divergence *held*, not "wrong" (§3) |
+
+`draft` is the default today: it keeps the work audible without a musicologist, and the circle's
+ear is the validator that *does* exist. `strict` is the vetted version for when the roster gap
+closes. Fabrication is caught earlier by the required `locator` + CI shape-check, not by the
+(absent) expert. This replaces a hard "validated-only" gate, which would deadlock: no validator,
+nothing compiles, nothing to listen to.
+
 ### The collector agent (minimal)
 
 One research agent, not yet an orchestrated "team": given a genre, it emits a `MusicologicalReport`
 via **structured output validated against the schema above** — so it *cannot* return a claim
 without a source, and it has **no field to write a political or felt claim**. The register-3
 boundary is in the type, not the prompt. It fills the facts with **real, citable sources**, status
-`proposed`, and opens a PR; a human then assembles the `Atom`, adding the owned political and
-opacity layers. One agent, one register, two genres. The "team" (an agent per aspect/register)
-comes after the format holds.
+`proposed`, and opens a PR; a human then assembles the `Atom`, adding the owned political layer.
+One agent, one register, two genres. The "team" (an agent per aspect/register) comes after the
+format holds.
 
 ### The political axis (register 3) — owned, and self-implication
 
 The method puts politics in the engine room (§6), not the lyrics (§7: form, not sermon). So the
 graph integrates it as **structure, not slogans**:
 
-- **At the atom**, register 3 is an *owned* reading (`political`), plus an explicit **right to
-  opacity** (`opacity`): a declared refusal to decompose some aspect into tags. A legibility
-  engine that can also record *"this we will not make legible"* is the self-implication made
-  concrete — Glissant's illegibility-as-resistance, inside the very machine that classifies.
+- **At the atom**, register 3 is an *owned* reading (`political`). The **right to opacity** (§6) is
+  honored as a *practice*, not a field: we simply do not decompose some atoms, or leave them thin
+  on purpose. We deliberately refuse an `opacity` field — encoding "what we refuse to make legible"
+  into a schema would *itself* make the refusal legible, the betrayal performed. Opacity is kept by
+  the silence, not by a record of the silence.
 - **At the crossing**, the two coherence tests are required fields: does it **creolize** or
   **flatten**? does it **preserve opacity** or **hand culture to the machine**? Plus the named
   **self-implication**: an AI fusing colonized-culture musics risks being the extraction it
@@ -230,18 +245,39 @@ method's own example of "ill-defined poisons its 600 crossings" (§4). Both alre
 scattered molecule properties in `fusions.json` — the wedge is to **lift them into sourced
 atoms** and prove the loop produces a richer, more reliable sheet than the hand-curated JSON.
 
-Done = both atom sheets exist with sourced musicological claims **and an owned political/opacity
-layer**, a maloya-x-footwork crossing references them **and answers the three §6 fields in the
-author's voice**, and the circle has validated or contested at least the maloya sheet in a PR.
+Done = both atom sheets exist with sourced musicological claims **and an owned political layer**,
+a maloya-x-footwork crossing references them **and answers the three §6 fields in the author's
+voice**, and the circle has validated or contested at least the maloya sheet in a PR.
+
+### Migration: one source of truth
+
+Don't let `atoms/` and `fusions.json` coexist — two truths drift. Migrate all three existing
+fusions into atoms + crossings in the wedge PR series, then **delete `fusions.json`**; `compile.py`
+reads only `atoms/` + `crossings/`. Six genres by hand, ~1h.
+
+The existing JSON fields don't all belong in the same place. Placement rule:
+- **Atom** (true of the genre regardless of what it's crossed with, sourceable): core
+  `instrumentation` (kayamb, roulèr…), the genre's characteristic tempo *range*, the vocal
+  *convention* (Creole call-and-response). These become sourced musicological claims.
+- **Crossing** (a choice specific to *this* fusion): `production`, the picked `tempo_feel`, the
+  specific `vocal` treatment, instruments *added* for the blend (the TB-303 in maloya×acid-blues),
+  and `avoid`.
+
+The test: *"would this be true of the genre on its own?"* → atom. *"Is this a decision about this
+blend?"* → crossing.
 
 ## Risks / open questions
 
-- **No musicologist to validate (the §8 gap).** P2 mitigates via sourcing, but a contested fact
-  with two conflicting sources still needs a human call. The roster gap is real.
+- **No musicologist to validate (the §8 gap).** The roster gap is real and not closed here. The
+  answer is the `draft` compile mode: the work stays audible and the circle's ear judges (§7)
+  while no expert exists. `strict` mode waits for the expert. We do not pretend sourcing *is*
+  expertise — it is traceability.
 - **Agent hallucinated sources.** A cited source that doesn't say what the agent claims is worse
-  than no source. Spot-check is part of the circle's review until trust is earned.
-- **compile.py rewrite.** Composing atom+atom changes the compiler. Deferred until the format is
-  validated on the wedge — no code in this RFC.
+  than no source. The required `locator` + a CI shape-check catch fabrication (a dead URL, a
+  malformed DOI) without a musicologist; semantic spot-check stays part of the circle's review.
+- **compile.py rewrite.** Composing atom+atom changes the compiler: it now reads `atoms/` +
+  `crossings/`, honors `--draft`/`--strict`, and must reject a crossing that references a missing
+  atom (named error, not `KeyError`). Built on the wedge — no code in this RFC.
 - **Format drift.** When the atom sheet schema changes, every sheet drifts. Keep the schema in
   this doc as the single source until it stabilizes (same discipline as method.md → PoC).
 - **Political fields rot into a checklist.** Required §6 text can degrade into rubber-stamped
