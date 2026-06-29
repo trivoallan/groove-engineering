@@ -9,8 +9,6 @@ backends**.
 
 Free, under **AGPLv3**.
 
-> 🗣️ **Open RFC — come comment:** [PR #1 — Methodology](https://github.com/trivoallan/groove-engineering/pull/1) · [comment inline](https://github.com/trivoallan/groove-engineering/pull/1/files)
-
 ## This repo
 
 | | |
